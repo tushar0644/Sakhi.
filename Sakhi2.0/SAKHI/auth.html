@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Login or create your Sakhi account to save wishlist and track orders." />
+  <title>Login / Signup | Sakhi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="announcement-bar">Free Shipping on all orders above INR 999 | New Season Live</div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Sakhi</a>
+      <button class="hamburger" aria-label="Open menu">&#9776;</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="shop-menu">
+          <a href="shop.html" class="shop-trigger">Shop</a>
+          <div class="shop-submenu">
+            <a href="shop.html?category=Dresses">Dresses</a>
+            <a href="shop.html?category=Kurtis">Kurtis</a>
+            <a href="shop.html?category=Tops">Tops</a>
+            <a href="shop.html?category=Sarees">Sarees</a>
+            <a href="shop.html?category=Western%20Wear">Western Wear</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="auth.html" class="active">Login</a>
+      </nav>
+      <form class="search-box" role="search"><input type="search" placeholder="Search styles" /></form>
+      <div class="header-actions"><button class="icon-btn wishlist-btn" aria-label="Wishlist">&#9825;</button><a href="cart.html" class="icon-btn cart-count" data-count="0" aria-label="Cart">&#128722;</a><a href="auth.html" class="btn">Login</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Welcome to Sakhi</h1>
+        <p>Secure your account for a faster, personalized shopping experience.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container auth-shell">
+        <aside class="auth-brand">
+          <h2 class="section-title">Soft Luxury Starts Here</h2>
+          <p>Save your wishlist, track orders, and get early access to new drops crafted for modern Indian women.</p>
+          <ul class="auth-points">
+            <li>Early access to new arrivals</li>
+            <li>Faster checkout and saved details</li>
+            <li>Exclusive offers for members</li>
+          </ul>
+        </aside>
+
+        <div class="auth-card">
+          <div class="auth-tabs" role="tablist" aria-label="Authentication options">
+            <button class="auth-tab active" type="button" data-auth-target="login" aria-selected="true">Login</button>
+            <button class="auth-tab" type="button" data-auth-target="signup" aria-selected="false">Sign Up</button>
+          </div>
+
+          <form id="login-form" class="auth-form active" novalidate>
+            <h2 class="section-title">Login</h2>
+            <div class="form-grid">
+              <input id="login-email" class="form-control" type="email" placeholder="Email Address" required />
+              <input id="login-password" class="form-control" type="password" placeholder="Password" required />
+              <button class="btn btn-primary" type="submit">Login</button>
+              <p class="auth-switch">Create a new account? <button type="button" class="auth-link" data-auth-link="signup">Sign up</button></p>
+              <p class="form-error error-text" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <form id="signup-form" class="auth-form" novalidate>
+            <h2 class="section-title">Create Account</h2>
+            <div class="form-grid">
+              <input id="signup-name" class="form-control" type="text" placeholder="Full Name" required />
+              <input id="signup-email" class="form-control" type="email" placeholder="Email Address" required />
+              <input id="signup-password" class="form-control" type="password" placeholder="Create Password" required />
+              <input id="signup-confirm" class="form-control" type="password" placeholder="Confirm Password" required />
+              <button class="btn btn-primary" type="submit">Create Account</button>
+              <p class="auth-switch">Already have an account? <button type="button" class="auth-link" data-auth-link="login">Login</button></p>
+              <p class="form-error error-text" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Sakhi</h4><p>Elegant fashion for confident women, crafted with soft luxury aesthetics.</p></div>
+      <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><h4>Policies</h4><a href="#">Shipping Policy</a><a href="#">Return Policy</a><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
+      <div><h4>Follow Us</h4><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">YouTube</a><a href="#">Facebook</a></div>
+    </div>
+    <div class="container footer-bottom">&copy; 2026 Sakhi Fashion. All rights reserved.</div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">&#8679;</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
